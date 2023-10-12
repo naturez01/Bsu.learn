@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    background-image: radial-gradient(red, black);
+    min-height: 100vh;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    font: 1.3rem "sans-serif", nunito;
+}
+header, footer {
+    position: sticky;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    z-index: none;
+    text-align: center;
+}
+header{
+    top: 0;
+}
+footer {
+    bottom: 0;
+}
+nav {
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    border-bottom: 2px solid yellow;
+}
+span {
+    font-size: smaller;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.profile {
+    scroll-margin-top: 6rem;
+    background-color: darkblue;
+    gap: 1.5rem;
+    border-radius: 5%;
+    padding: 1rem;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(3, 3, 46);
+}
+.profile img{
+    border-radius: 50%;
+    border: 3px solid yellow;
+
+}
+.profile figcaption {
+   font-weight: bolder;
+   font-size: larger;
+   color: yellow;
+   
+}
+.profile p {
+    font-weight: smaller;
+    font-size: large;
+}
+.profile p::before {
+    content: open-quote;
+}
+.profile p::after {
+    content: close-quote;
+}
+.profile:target {
+    background-color: green;
+}
+.dropbutton {
+    padding: 4px;
+    color: black;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+}
+.content {
+    background-color: aliceblue;
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+    box-shadow: 0px 0px 9px 3px red;
+    padding: 5px;
+    display: none;
+}
+.content a {
+    text-decoration: none;
+}
+.content a:hover {
+    opacity: 0.6;;
+}
+.content a:after {
+    color: red;
+}
+.dropdown:hover .content {
+    display: block;
+}
